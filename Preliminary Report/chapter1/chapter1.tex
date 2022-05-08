@@ -1,0 +1,73 @@
+\chapter{Introduction}
+\label{ch:introduction}
+\label{ch:chapter1}
+
+Late 19th century physics faced two major problems, both arising within electromagnetism. The first involved the prediction of an infinite amount of energy being radiated across all wavelengths by black bodies. This problem was first solved by Max Planck in December 1900, giving birth to quantum mechanics. The second problem was concerned with the constant speed of propagation of electromagnetic fields, as suggested by Maxwell's equations. This observation could not be explained in the framework of the classical notions of space and time. The solution to this problem came from Albert Einstein in 1905 with his special theory of relativity.
+
+These two theories were developed largely independently, until radiation was incorporated into quantum mechanics. Dirac used a quantised electromagnetic field as proposed by Born, Heisenberg and Jordan to explain the spontaneous emission of radiation by matter \cite{weinberg_search_1977}. Dirac's idea of a quantum field had two advantages: it could be formulated in a relativistically invariant fashion and it incorporated processes of particle creation and annihilation. This last feature allowed Fermi to explain nuclear beta decay \cite{weinberg_search_1977}. Throughout the 20th century, physicist leveraged quantum field theory to understand not only electrodynamics but also matter and every other known interaction (with the notable exception of gravity), thus establishing the Standard Model (SM) of particle physics. It enables physicists to describe matter and its interactions through three of the four known fundamental forces: electromagnetism, the weak, and the strong interactions. In the SM, interactions are mediated by particles called gauge bosons. The SM bosons are photons (responsible for mediating the electromagnetic interaction), $W^{\pm}$ and $Z^0$ bosons (mediators of the weak interaction), and gluons (the mediators associated with the strong interaction). On the other hand, matter is composed of a class of particles known as fermions, which in turn come in two categories: quarks and leptons. The former carry a type of charge referred to as colour charge, while the latter do not. This enables quarks to interact via the strong force. Fermions are further divided into three generations. Among generations, particles are distinguished by their mass and flavour quantum number, however, the electric and strong interactions are the same. Heavier, more energetic particles are unstable and decay into particles of a lower generation \cite{kane_modern_1987}. Each generation contains two types of leptons and two types of quarks. One of the two leptons has electric charge -1, and the other is neutral; the two quarks can be classified into one with charge +2/3 (up-like) and the other with charge -1/3 (down-like). These facts are summarised in table \ref{tab:SM_particles}.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c c }
+        \toprule
+        Particle type & Particle category & Particles \\ \midrule
+        \multirow{6}{3cm}{\centering Fermions} & \multirow{3}{4cm}{\centering Leptons \\ (spin = $1/2$, no colour charge)} & Electron ($e$), Electron neutrino ($\nu_e$) [1] \\
+        & & Muon ($\mu$), Muon neutrino ($\nu_\mu$) [2] \\
+        & &  Tau ($\tau$), Tau neutrino ($\nu_\tau$) [3] \\\cline{2-3}
+        & \multirow{3}{4cm}{\centering Quarks \\ (spin = $1/2$, have colour charge)} & Up (u), Down (d) [1] \\
+        & & Charm (c), Strange (s) [2] \\
+        & & Top (t), Bottom (b) [3] \\ \midrule
+        \multirow{5}{3cm}{\centering Bosons} & \multirow{3}{4cm}{\centering Gauge Bosons \\ (spin = 1, force carriers)} & Photons ($\gamma$, electromagnetic interaction) \\
+        & & $W$ and $Z$ bosons ($W^+$, $W^-$, $Z$; weak interaction) \\
+        & & Eight types of gluons ($g$, strong interaction) \\\cline{2-3}
+        & Scalar bosons (spin = 0) & Higgs Boson ($H^0$) \\
+        \bottomrule
+    \end{tabular}
+    \caption{Elementary Particles of the Standard Model (the number at the end of each row of fermions is the generation number)}
+    \label{tab:SM_particles}
+\end{table}
+
+In spite of its success at explaining a great deal of the observed phenomena, the SM faces serious challenges; to name a few, the SM fails to explain neutrino masses \cite{mohapatra_neutrino_1980,Fukuda_1999,Ahmad_2002,Eguchi_2003}, gravity \cite{donoghue_effective_2012}, or the dark-matter content of the universe \cite{dodelson_sterile_1994}. These shortcomings hint towards new physics beyond the SM. 
+
+The search for new physics is an ongoing effort, which requires performing experimental measurements to probe a wide range of processes. An important class of processes that could provide deep insights into new physics are those in which fermions suffer a flavour change. These are flavour processes and in recent years they have drawn some attention. Recent results involving $B$-meson decays show deviations from SM predictions. At the quark level, the anti-bottom quark, $\overline{b}$, in the $B$-meson decays into second-generation quarks and leptons according to $\overline{b}\rightarrow \overline{s}\ell^+ \ell^-$ and $\overline{b}\rightarrow \overline{c}\ell^+ \nu_\ell$. In the SM, such processes are mediated by virtual electroweak bosons ($\gamma$, $W^\pm$, $Z^0$) and different leptons have the same interaction strengths, so the decay rates for $B^+ \rightarrow K^+\ell^+\ell^-$ across lepton generations should be identical. However, experimental data from proton-proton collisions show large deviation from theoretical values \cite{lhcbcollaboration2021test, lhcb_measurement}. Despite not reaching the threshold of statistical significance, these results point towards lepton flavour universality (LFU) violation. To account for these anomalies, several references have proposed the existence of a new hypothetical particle called the leptoquark, which can decay into a quark and a lepton \cite{alonso_lepton_2015,fajfer_vector_2016,assad_baryon_2018,blanke_b_2018,barbieri_b-decay_2018,calibbi_model_2018,di_luzio_gauge_2017,bhattacharya_simultaneous_2017}. The introduction of leptoquarks allows for generation-dependent coupling constants and therefore could account for the $B$-meson anomalies. The existence of leptoquarks can be tested in particle colliders such as CERN's Large Hadron Collider, LHC. This dissertation is a phenomenological study of spin-1 leptoquark production in association with a jet, in final states involving third generation fermions. More concretely, the main focus are proton-proton collisions, resulting in a jet, a $\tau$, and vector leptoquark, which in turn decays into $b$-quark and a $\tau$. The Feynman diagram for this process can be seen in \ref{fig:vbf}. At the detector level, the study will be focused on states where one of the $\tau$'s decays hadronically and the other leptonically. 
+%Thus, the overall final state comprises a hadronic $\tau$, a lepton, a $b$-jet, a light jet, and missing energy.
+
+\begin{figure}[h]
+    \centering
+    \begin{center}
+    \begin{tikzpicture}
+      \begin{feynman}
+        \vertex (i1) at (-3,2.4) {\(b\)};
+        \vertex (f1) at (3,2.4) {\(\tau\)};
+        \vertex (v1) at (0,1.5);
+        
+        \vertex (a) at (0.75,0);
+        
+        \vertex (i2) at (-3,-2.4) {\(j\)};
+        \vertex (f2) at (3,-2.4) {\(j\)};
+        \vertex (v2) at (0,-1.5);
+        
+        
+        \vertex (d) at (3, 0);
+        \vertex [above right=of d] (e2) {\(\tau\)};
+        \vertex [below right=of d] (e1) {\(b\)};
+        
+        \diagram* {
+          (i1) --  (v1) -- (f1),
+          (i2) -- (v2) --  (f2),
+          (v1) -- [boson, edge label={\(U_1\)}] (a),
+          (v2) -- [boson, edge label={\(\gamma, Z, g\)}] (a),
+          (a) -- [boson, edge label=\(U_1\)] (d),
+          (d) -- (e1),
+          (d) -- (e2),
+        };
+      \end{feynman}
+    \end{tikzpicture}
+\end{center}
+    \caption{Feynman diagram for vector leptoquark production in association with a jet, including subsequent decay of the leptoquark into a $b$-quark and a $\tau$ lepton.}
+    \label{fig:vbf}
+\end{figure}
+
+To this end, standard computational tools for high-energy physics will be used in order to obtain precise predictions of leptoquark production under LHC conditions. In high-energy physics, calculations of experimental parameters involving interactions such as cross-sections, decay rates, and branching ratios are related to the $S$-matrix. The computational tool that will aid these calculations is MagGraph \cite{automated-alwall-2014, MadGraph5}. MadGraph calculates at next-to-leading order (NLO) matrix elements in the Standard Model and other renormalizable or effective field theories. Furthermore it includes a Monte Carlo (MC) event generator, MadEvent \cite{MadEvent}. 
+
+MadEvent's output will be further passed through Pythia \cite{sjostrand_pythia_2006}, which is, like MadEvent, a MC event generator that perturbatively evolves the partons through the emission of QCD radiation and eventually turns them into physical states. This process is known as hadronization. In order to simulate the signal that would be obtained in actual detectors, Delphes \cite{de_favereau_delphes_2014} will be used. Simulations will be performed using the CMS detector parameters. Finally, ROOT, a piece of software for statistical analysis of scientific data written in C++, will be used to analyse the simulated data.

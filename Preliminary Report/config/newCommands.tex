@@ -1,0 +1,46 @@
+% Reference commands
+\newcommand{\ch}[1]{\ref{ch:#1}}
+\newcommand{\sect}[1]{\ref{sec:#1}}
+\newcommand{\fig}[1]{\ref{fig:#1}}
+
+% Math commands
+\newcommand{\dcov}[1][\mu]{\partial_{#1}}
+\newcommand{\dcon}[1][\mu]{\partial^{#1}}
+\newcommand{\lag}{\mathcal{L}}
+\newcommand{\sd}{\slashed{\partial}}
+
+% Simple command for figures
+\newcommand{\ownFigure}[5]
+{
+\begin{figure}[#1] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=#2\textwidth]{images/#3} 
+   \caption{#5}
+   \label{fig:#4}
+\end{figure}
+}
+
+%Feynman diagram commands
+\newcommand{\simpleFeynman}[5]{
+\begin{figure}[#1]
+    \centering
+    \feynmandiagram [#2] {
+      #3
+    };
+    \caption{#5}
+    \label{fig:#4}
+\end{figure}
+}
+
+\newcommand{\manualFeynman}[4]{
+\begin{figure}[#1]
+    \centering
+    \begin{tikzpicture}
+      \begin{feynman}
+        #2
+      \end{feynman}
+    \end{tikzpicture}
+    \caption{#4}
+    \label{fig:#3}
+\end{figure}
+}
